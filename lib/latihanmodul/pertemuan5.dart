@@ -20,7 +20,7 @@ class _FormScreenState extends State<FormScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueAccent,
-        title: Text('Halaman Form'),
+        title: const Text('Halaman Form'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -41,20 +41,20 @@ class _FormScreenState extends State<FormScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextField(
               onChanged: (String value) {},
               controller: textEditingController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Masukkan Nama',
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
               children: [
-                Text('Jenis Kelamin : '),
+                const Text('Jenis Kelamin : '),
                 Radio(
                   value: 'Laki-Laki',
                   groupValue: selectedRadio,
@@ -64,7 +64,7 @@ class _FormScreenState extends State<FormScreen> {
                     });
                   },
                 ),
-                Text('Laki-Laki'),
+                const Text('Laki-Laki'),
                 Radio(
                   value: 'Perempuan',
                   groupValue: selectedRadio,
@@ -74,14 +74,14 @@ class _FormScreenState extends State<FormScreen> {
                     });
                   },
                 ),
-                Text('Perempuan'),
+                const Text('Perempuan'),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             CheckboxListTile(
-              title: Text('Olahraga'),
+              title: const Text('Olahraga'),
               value: olahraga,
               onChanged: (value) {
                 setState(() {
@@ -90,7 +90,7 @@ class _FormScreenState extends State<FormScreen> {
               },
             ),
             CheckboxListTile(
-              title: Text('Seni'),
+              title: const Text('Seni'),
               value: seni,
               onChanged: (value) {
                 setState(() {
@@ -98,11 +98,11 @@ class _FormScreenState extends State<FormScreen> {
                 });
               },
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             SwitchListTile(
-              title: Text('Lulus'),
+              title: const Text('Lulus'),
               value: switchValue,
               onChanged: (value) {
                 setState(() {
@@ -112,7 +112,7 @@ class _FormScreenState extends State<FormScreen> {
             ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Kirimkan'),
+              child: const Text('Kirimkan'),
             )
           ],
         ),

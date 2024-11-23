@@ -14,8 +14,8 @@ class _LandingPageState extends State<LandingPage> {
   int currentIndex = 0;
   Widget dotIndicator(int index) {
     return AnimatedContainer(
-      duration: Duration(microseconds: 400),
-      margin: EdgeInsets.only(right: 6),
+      duration: const Duration(microseconds: 400),
+      margin: const EdgeInsets.only(right: 6),
       width: 20,
       height: 4,
       decoration: BoxDecoration(
@@ -114,7 +114,7 @@ class _LandingPageState extends State<LandingPage> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => HomeScreen(),
+                                  builder: (context) => const HomeScreen(),
                                 ),
                               );
                             },

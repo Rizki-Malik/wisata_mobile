@@ -9,8 +9,8 @@ class Pertemuan6 extends StatelessWidget {
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Pertemuan 6 Membuat List View'),
-          bottom: TabBar(tabs: [
+          title: const Text('Pertemuan 6 Membuat List View'),
+          bottom: const TabBar(tabs: [
             Tab(
               text: 'ListView',
             ),
@@ -47,7 +47,7 @@ class ContohListView extends StatelessWidget {
           child: Center(
             child: Text(
               '$number',
-              style: TextStyle(fontSize: 50),
+              style: const TextStyle(fontSize: 50),
             ),
           ),
         );
@@ -71,7 +71,7 @@ class ContohListViewBuilder extends StatelessWidget {
           child: Center(
             child: Text(
               '${numberList[index]}',
-              style: TextStyle(fontSize: 50),
+              style: const TextStyle(fontSize: 50),
             ),
           ),
         );
@@ -96,7 +96,7 @@ class ContohListViewSeparated extends StatelessWidget {
             child: Center(
               child: Text(
                 '${numberList[index]}',
-                style: TextStyle(fontSize: 50),
+                style: const TextStyle(fontSize: 50),
               ),
             ),
           );
